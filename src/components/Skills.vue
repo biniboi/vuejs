@@ -1,9 +1,8 @@
 <template>
   <div class="skills">
-    <h1 v-once>{{name}}</h1>
+    <h1>{{name}}</h1>
 
-    <!-- Add this -->
-    {{btnState ? 'The button is disabled' : 'The button is active'}}
+
 
     <button v-on:click="changeName" v-bind:disabled="btnState">Change Name</button>
     <p>
@@ -40,8 +39,7 @@ export default {
   name: 'Skills',
   data() {
     return {
-      name: 'Coursetro',
-	  btnState:true
+      name: 'Coursetro'
     }
   }
 }
